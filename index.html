@@ -30,15 +30,30 @@
     <!-- Navigation-->
         <nav>
             <ul>
-                <li><a href="home.asp">Home</a></li>
-                <li><a href="destinations.asp">Destinations</a></li>
-                <li><a href="contact.asp">Contact</a></li>
-                <li><a href="about.asp">About</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#meet">Meet the Guides</a></li>
+                <li><a href="#contact">Contact us</a></li>
             </ul>
         </nav>
         <hr>
-    <!-- Experiences -->
+
+        <!-- Home -->
+        <section id="home">
+        <img src="img/photo-india.jpg" alt="/blank">
+            <h2>Looking for a destination?
+                Then, this is the right place for you!
+                Explore the world with us, and find your plan your next adventure!
+            </h2>
+        </section>
+
         <section>
+            <h2>WWF's Symbol</h2>
+            <p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
+        </section>
+
+    <!-- Destinations -->
+        <section id="destinations">
             <h2>WWF History</h2>
             <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
         </section>
@@ -58,8 +73,9 @@
             <p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
         </section>
         <hr>
+
     <!-- Meet the team-->
-        <section>
+        <section id="meet">
             <div>
                 <h1> Meet the guides </h1>
                 <div>
@@ -69,7 +85,7 @@
                         <div> Main guide</div>
                         <div>
                             <a href="https://www.facebook.com/mathieu.palmesani"><i class="fab fa-facebook-f"></i></a>
-                            <a href="https://www.linkedin.com/in/giuliomazzone/"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.linkedin.com/in/mathieupalmesani/"><i class="fab fa-linkedin"></i></a>
                         </div>
                     </div>
                     <div>
@@ -78,13 +94,34 @@
                         <div> Second Guide </div>
                         <div>
                             <a href="https://www.facebook.com/alice.mazzone"><i class="fab fa-facebook-f"></i></a>
-                            <a href="https://www.linkedin.com/in/dfwk/"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.linkedin.com/in/alicemazzone/"><i class="fab fa-linkedin"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <br>
+        <hr>
+
+    <!-- Contact us -->
+        <section id="contact">
+            <div class="container">
+            <form action="action_page.php">
+                <label for="fname">Please enter your First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <label for="lname">please enter your Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <label for="country">Select the experience your are willing to book: </label>
+                <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+                </select>
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Tell us a little bit more about what you are looking for.." style="height:200px"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+            </div>
+
     <!-- Footer-->
         <footer>
             <p>Pictures: All pictures were accorded to me from Mathieu Palmesani<p>
