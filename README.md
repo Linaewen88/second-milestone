@@ -1,4 +1,4 @@
-Best destinations finder:
+<h1>Best destinations finder:<h1>
 
 Get users to choose a travel package from this site and/or from its sponsors.
 

@@ -25,51 +25,82 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
             integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
             crossorigin="anonymous"></script>
-</head>
-	<body>
+    <!-- Google Map Integration -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly" defer></script>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script src="./index.js"></script>
+
     <!-- Navigation-->
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#map">Get inspired</a></li>
-                <li><a href="#destinations">Destinations</a></li>
-                <li><a href="#meet">Meet the Guides</a></li>
-                <li><a href="#contact">Contact us</a></li>
-            </ul>
+        <nav class="navbar">
+            <div class="box">
+                <div class="color">
+                    <ul class="navbar-demo">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#get-inspired">Get inspired</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#meet">Meet the Guides</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
         <hr>
 
+
         <!-- Home -->
         <section id="home">
-        <img src="img/photo-india.jpg" alt="/blank">
+        <img src="img/background-image-trip.jpg" alt="/blank">
             <h2>Looking for a destination?
                 Then, this is the right place for you!
             </h2>
             <h4> Explore the world with us, and find your plan your next adventure!</h4>
         </section>
+        <hr>
 
-    <!-- Explore the map -->
-        <section id="map">
+    <!-- Explore the map Not working-->
+        <section id="get-inspired">
+        <div id="map"></div>
             <map got with APIs>
-
+        </section>
+        <hr>
     <!-- Destinations -->
         <section id="destinations">
             <h2>India - Darjeeling Express: </h2>
-            <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+            <img src="img/india-photo.jpg" alt="/blank">
+            <p>If you are looking for adventure, then the Darjeeling Express experience is what you are looking for. Join our guides in a train-trip over India, and explore remote places with them. </p>
         </section>
 
         <section>
-            <h2>Turky - Thousand and one nights: </h2>
+            <h2>Turkey - Thousand and one nights: </h2>
+            <img src="img/turkey-photo.jpg" alt="/blank">
             <p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
         </section>
         <hr>
+
         <section>
             <h2>China - Following Mulan's steps: </h2>
+            <img src="img/china-photo.jpg" alt="/blank">
+            <p>where you dreaming of being a warrior instead than the classical princess or prince, as a kid? Were you brave to the point to be stubborn, and always willing to explore new things? Do you love China? 
+            Then join us around China for an amazing experience.</p>
+        </section>
+
+         <section>
+            <h2>Jordan - Who wants to become a Jedi?: </h2>
+            <img src="img/jordan-photo.jpg" alt="/blank">
+            <p>Are you a fan of Luca's movie? Is becoming a Jedi one of your biggest dream? Then this is the perfect experience for you! Join us in Wadi Rum and May the force be with you!</p>
+        </section>
+
+        <section>
+            <h2>Greece - The Odissey's role play game: </h2>
+            <img src="img/greece-photo.jpg" alt="/blank">
             <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
         </section>
 
         <section>
             <h2>Mexico - Taco's tour and beyond: </h2>
+            <img src="img/mexico-photo.jpg" alt="/blank">
             <p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
         </section>
         <hr>
@@ -130,4 +161,3 @@
         </footer>
 	</body>
 </html>
-			
