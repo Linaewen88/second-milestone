@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="virtual game experiences, virtual game, team building"/>
+    <meta name="description" content="travel, wunderlust experiences, destinations, adventure"/>
     <meta name="author" content="Alice Mazzone"/>
     <title> Pick your dream destination </title>
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico"/>
@@ -28,10 +28,10 @@
     <!-- Google Map Integration -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script
-      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly" defer></script>
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh2S-VxqKJUFvR1Ymtth53Il_hvxozqkw&callback=initMap&libraries=&v=weekly" defer></script>
     <link rel="stylesheet" type="text/css" href="./style.css" />
-    <script src="./index.js"></script>
-
+    <script src="./code.js"></script>
+ 
     <!-- Navigation-->
         <nav class="navbar">
             <div class="box">
@@ -46,70 +46,95 @@
                 </div>
             </div>
         </nav>
-
+        <div class="content">
+    
         <!-- Home -->
         <section id="home">
-        <img src="img/background-image-trip.jpg" alt="/blank">
+        <div class="picturesDiv"> 
+            <img class="pictures" src="img/background-image-trip.jpg" alt="/blank">
+        </div> 
             <h2>Looking for a destination?
                 Then, this is the right place for you!
             </h2>
-            <h4> Explore the world with us, and find your next adventure!</h4>
+            <p>Explore the world with us, and find your next adventure!</p>
         </section>
         <hr>
 
     <!-- Explore the map Not working-->
         <section id="get-inspired">
-        <div id="map"></div>
-            <map got with APIs>
+        <div id="map">
+
+        </div>
         </section>
         <hr>
+
     <!-- Destinations -->
         <section id="destinations">
+            <div class="picturesDiv">
+                <img class="pictures"  src="img/adventure.jpg" alt="/blank">
+                <div class="text-destinations">
+                    <p> Destinations </p>
+                </div>
+            </div>
             <h2>India - Darjeeling Express: </h2>
-            <img src="img/india-photo.jpg" alt="/blank">
+            <div class="picturesDiv">
+                <img class="pictures" src="img/india-photo.jpg" alt="/blank">
+            </div>
             <p>If you are looking for adventure, then the Darjeeling Express experience is what you are looking for. Join our guides in a train-trip over India, and explore remote places with them. </p>
         </section>
 
         <section>
             <h2>Turkey - Thousand and one nights: </h2>
-            <img src="img/turkey-photo.jpg" alt="/blank">
+            <div class="picturesDiv">
+                <img class="pictures" src="img/turkey-photo.jpg" alt="/blank">
+            </div>
             <p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
         </section>
         <hr>
 
         <section>
             <h2>China - Following Mulan's steps: </h2>
-            <img src="img/china-photo.jpg" alt="/blank">
+            <div class="picturesDiv">
+                <img class="pictures" src="img/china-photo.jpg" alt="/blank">
+            </div>
             <p>where you dreaming of being a warrior instead than the classical princess or prince, as a kid? Were you brave to the point to be stubborn, and always willing to explore new things? Do you love China? 
             Then join us around China for an amazing experience.</p>
         </section>
 
          <section>
             <h2>Jordan - Who wants to become a Jedi?: </h2>
-            <img src="img/jordan-photo.jpg" alt="/blank">
+            <div class="picturesDiv">
+                <img class="pictures" src="img/jordan-photo.jpg" alt="/blank">
+            </div>
             <p>Are you a fan of Luca's movie? Is becoming a Jedi one of your biggest dream? Then this is the perfect experience for you! Join us in Wadi Rum and May the force be with you!</p>
         </section>
 
         <section>
             <h2>Greece - The Odissey's role play game: </h2>
-            <img src="img/greece-photo.jpg" alt="/blank">
+            <div class="picturesDiv">
+                <img class="pictures" src="img/greece-photo.jpg" alt="/blank">
+            </div>
             <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
         </section>
 
         <section>
             <h2>Mexico - Taco's tour and beyond: </h2>
-            <img src="img/mexico-photo.jpg" alt="/blank">
+            <div class="picturesDiv">
+                <img class="pictures" src="img/mexico-photo.jpg" alt="/blank">
+            </div>
             <p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
         </section>
         <hr>
-
+    
     <!-- Meet the team-->
         <section id="meet">
             <div>
                 <h1> Meet the guides </h1>
                 <div>
                     <div>
-                        <img src="img/picture1.jpg" alt="/blank">
+                        <div class="picturesDiv">
+                            <img class="pictures" src="img/picture1.jpg" alt="/blank">
+                        </div>
                         <div> Mathieu Palmesani </div>
                         <div> Main guide</div>
                         <div>
@@ -118,7 +143,9 @@
                         </div>
                     </div>
                     <div>
-                        <img src="img/picture2.jpg" alt="/blank">
+                        <div class="picturesDiv">
+                            <img class="pictures" src="img/picture2.jpg" alt="/blank">
+                        </div>
                         <div> Alice Mazzone </div>
                         <div> Second Guide </div>
                         <div>
@@ -134,7 +161,9 @@
     <!-- Contact us -->
         <section id="contact">
             <div class="container">
-            <form action="action_page.php">
+                <h1> Contact us </h1>
+                <br>
+                <form action="action_page.php">
                 <label for="fname">Please enter your First Name</label>
                 <input type="text" id="fname" name="firstname" placeholder="Your name..">
                 <label for="lname">please enter your Last Name</label>
@@ -153,12 +182,13 @@
                 <input type="submit" value="Submit">
             </form>
             </div>
-
+    </section>    
+    </div>
     <!-- Footer-->
     <section class="footer">
         <footer class="footer-distributed">
             <div class="footer-right">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.facebook.com/alice.mazzone/"><i class="fa fa-facebook"></i></a>
                     <a href="#"><i class="fa fa-twitter"></i></a>
                     <a href="#"><i class="fa fa-linkedin"></i></a>
                     <a href="#"><i class="fa fa-github"></i></a>
@@ -171,9 +201,13 @@
                         <a href="#meet">Meet the guides</a>
                         <a href="#contact">Contact us</a>
                     </p>
-                    <p>Company Name &copy; 2020</p>
+                    <p>Alice in Wonderland &copy; 2020</p>
                 </div>
             </footer>
         </section>
-	</body>
+        <script>
+            initSections();
+        </script>
+    </body>
+    
 </html>
